@@ -1,0 +1,234 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #f1f2f3;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.up {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 100;
+  transform: translateY(-30px);
+}
+@keyframes anime {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+* {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+.navbar-brand {
+  font-family: 'Grandstander', cursive;
+}
+.background {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url(../Images/floriane-vita-FyD3OWBuXnY-unsplash.jpg) center/cover;
+  color: #fff;
+}
+i {
+}
+.background li {
+  margin: 0 0.8rem;
+}
+.background li a {
+  text-transform: uppercase;
+  color: #fff !important;
+}
+.exapand1 {
+  width: 100%;
+  height: 0.15rem;
+  background: #d6dfe1;
+  position: relative;
+  border-radius: 1rem;
+}
+.exapand1:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #2de0f0;
+  position: absolute;
+  border-radius: 1rem;
+  top: 0;
+  left: 0;
+  transform: scaleX(0.2);
+  transition: all 0.6s ease-in-out;
+}
+.exapand1:hover:before {
+  transform: scaleX(1);
+  cursor: pointer;
+}
+#work {
+  background: #f7f8f9;
+}
+#work .col-12 p,
+#features .col-12 p,
+#fea .col-12 p,
+#clients .col-12 p,
+#team .col-12 p,
+#contact .col-12 p,
+#contact1 .col-12 p {
+  width: 50%;
+}
+#work .col-12 .exapand1,
+#features .col-12 .exapand1,
+#fea .col-12 .exapand1,
+#clients .col-12 .exapand1,
+#team .col-12 .exapand1,
+#contact .col-12 .exapand1,
+#contact1 .col-12 .exapand1 {
+  width: 30%;
+}
+#work i,
+#features i {
+  font-size: 1.5rem;
+  background: #69e3f1;
+  border-radius: 50%;
+  border: 0.5rem solid #c4d8dd;
+  box-sizing: border-box;
+  color: rgb(223, 222, 222);
+  transform: translateY(-20px);
+  transition: all 0.9s;
+}
+#features i {
+  border: 0.4rem solid #fff;
+  transform: translateY(0px);
+  margin-top: 1rem;
+}
+#work h5 {
+  color: #69e3f1;
+  transition: all 0.9s;
+}
+#work .content:hover h5 {
+  color: #fff;
+}
+#work .content,
+#team .content {
+  background: #ededed;
+  transition: all 0.9s;
+}
+#work .content:hover,
+#team .content:hover {
+  background: #69e3f1;
+  color: #fff;
+}
+.content img {
+  border: 0.5rem solid #69e3f1;
+  transform: translateY(-65%);
+}
+.content:hover h5 {
+  color: #fff;
+}
+.content:hover i {
+  background: #fff;
+  color: #69e3f1;
+  border-color: #3c8891;
+}
+#features {
+  background: #000;
+  color: #fff;
+}
+#fea i {
+  font-size: 1.5rem;
+  background: #fff;
+  border-radius: 50%;
+  border: 0.2rem solid #69e3f1;
+  color: #69e3f1;
+  width: 60px;
+  height: 60px;
+  transition: 0.5s all;
+}
+#fea i:hover {
+  color: #fff;
+  background: #69e3f1;
+}
+#fea h5 {
+  color: #69e3f1;
+}
+#clients {
+  background: #000;
+  color: #fff;
+}
+#clients img {
+  width: 8rem;
+  height: 8rem;
+  border: 2px solid #69e3f1;
+  object-fit: cover;
+}
+.carousel-indicators {
+  transform: translateY(50px);
+}
+.carousel-indicators li {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+.icon i {
+  padding: 0.5rem;
+  border: 0.2rem solid #cbd5d7;
+  border-radius: 50%;
+  color: #0ddbfa;
+  width: 38px;
+  height: 38px;
+}
+
+#contact {
+  background: #000;
+  color: #fff;
+}
+.buttons button {
+  margin: 0 10px;
+}
+#contact1 i {
+  font-size: 1.5rem;
+  color: #09def7;
+}
+
+@media only screen and (max-width: 768px) {
+  #work .col-12 p,
+  #features .col-12 p,
+  #fea .col-12 p,
+  #clients .col-12 p,
+  #team .col-12 p,
+  #contact .col-12 p,
+  #contact1 .col-12 p {
+    width: 100%;
+  }
+  #work .col-12 .exapand1,
+  #features .col-12 .exapand1,
+  #fea .col-12 .exapand1,
+  #clients .col-12 .exapand1,
+  #team .col-12 .exapand1,
+  #contact .col-12 .exapand1,
+  #contact1 .col-12 .exapand1 {
+    width: 80%;
+  }
+  #features .col-sm-6 {
+    border: 1px solid #007bff !important;
+  }
+  .up {
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+  }
+  #contact1 .col-lg-4 {
+    border: 1px solid #000;
+  }
+}
